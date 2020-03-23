@@ -7,8 +7,8 @@ const Post = (props) => {
                 <img src="http://placeimg.com/200/150/tech" alt="dummy" />
             </div>
             <div className="content">
-                <p className="title">Dummy Title </p>
-                <p className="desc">Dummy Body here</p>
+                <p className="title">{props.title}</p>
+                <p className="desc">{props.decs}</p>
             </div>
         </div>
     )
