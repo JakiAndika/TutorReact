@@ -15,7 +15,7 @@ class BlogPost extends Component {
         //             post: json
         //         })
         //     })
-        Axios.get('https://jsonplaceholder.typicode.com/posts')
+        Axios.get('http://localhost:3004/posts')
             .then((result) => {
                 this.setState({
                     post: result.data
@@ -28,7 +28,7 @@ class BlogPost extends Component {
             <Fragment>
                 <p className="section-title">Blog Post</p>
                 {this.state.post.map(post => {
-                    return <Post key={post.id} title={post.title} decs={post.body} />
+                    return <Post key={post.id} title={post.title} desc={post.body} />
                 })}
             </Fragment>
         )
