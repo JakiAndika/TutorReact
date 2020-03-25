@@ -89,6 +89,7 @@
 }
 
 button.btn-submit {
+    cursor: pointer;
     outline: none;
     border: 1px solid #2196F3;
     padding: 10px 30px;
